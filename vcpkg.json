@@ -15,7 +15,8 @@
     "openssl",
     {
       "name": "ffmpeg",
-      "features": [ "all" ]
+      "features": [ "all" ],
+      "version": "v6.1.1#11"
     }
   ],
   "features": {
