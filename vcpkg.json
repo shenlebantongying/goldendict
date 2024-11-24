@@ -16,7 +16,7 @@
     {
       "name": "ffmpeg",
       "features": [ "all" ],
-      "version-string": "v6.1.1#11"
+      "version-string": "6.1.1"
     }
   ],
   "features": {
