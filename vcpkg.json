@@ -12,7 +12,11 @@
     "opencc",
     "xapian",
     "zlib",
-    "openssl"
+    "openssl",
+    {
+      "name": "ffmpeg",
+      "features": [ "all" ]
+    }
   ],
   "features": {
     "breakpad": {
