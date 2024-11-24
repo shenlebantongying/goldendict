@@ -45,4 +45,7 @@ message(STATUS "!!! -> LIBS ${FFMPEG_LIBRARIES}")
 target_include_directories(${GOLDENDICT} PRIVATE ${FFMPEG_INCLUDE_DIRS})
 target_link_directories(${GOLDENDICT} PRIVATE ${FFMPEG_LIBRARY_DIRS})
 target_link_libraries(${GOLDENDICT} PRIVATE ${FFMPEG_LIBRARIES})
+target_link_libraries(${GOLDENDICT} PRIVATE "${FFMPEG_LIBRARY_DIRS}\swresample.lib")
+
+
 
