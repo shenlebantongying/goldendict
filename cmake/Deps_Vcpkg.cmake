@@ -38,3 +38,10 @@ if (WITH_EPWING_SUPPORT)
 
     set_target_properties(eb PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${GD_WIN_OUTPUT_DIR})
 endif ()
+
+
+find_package(FFMPEG REQUIRED)
+target_include_directories(main PRIVATE ${FFMPEG_INCLUDE_DIRS})
+target_link_directories(main PRIVATE ${FFMPEG_LIBRARY_DIRS})
+target_link_libraries(main PRIVATE ${FFMPEG_LIBRARIES})
+
